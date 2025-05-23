@@ -1,26 +1,10 @@
-import java.util.Arrays;
-import java.util.Scanner;
-
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-StudentsData data=new StudentsData();
-data.enteringStudentsData();
-data.gettingStudentsData();
-
-        BankData bankData=new BankData();
-        bankData.userDetails();
-        bankData.selection();
-
-        VehicleSelection vehicleSelection=new VehicleSelection();
-        vehicleSelection.select();
-
-
-
-
-
-
-
+        Car car = new Car("Hyundai(verna)", "petrol", 3500); //object created for car
+        car.displayInformation();//calling method
+        Bike bike = new Bike("Yamaha(RX)", "petrol", 1100); //object created for bike
+        bike.displayInformation();//calling method
     }
 }
